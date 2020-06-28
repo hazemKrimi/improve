@@ -1,0 +1,109 @@
+@font-face {
+    font-family: Coolvetica;
+    src: url(./coolvetica.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Coolvetica;
+    font-size: 15px;
+    background-color: rgb(94, 119, 206);
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: .3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(94, 119, 206);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #353849;
+}
+
+.btn-secondary {
+    background-color: rgb(94, 119, 206);
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+#main-nav {
+    margin: 0;
+    background-color: #353849;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.nav-item a {
+    font-size: 1.5rem;
+}
+
+#main-area p {
+    width: 50%;
+    margin: auto;
+}
+
+#main-area a {
+    font-size: 2rem;
+}
+
+#main-area a:hover {
+    border-bottom: #353849 solid .1rem;
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    opacity: 0;
+}
+
+#sign-up-form, #log-in-form, #add-post-form, #profile-form, #best-posts {
+    width: 50vw;
+    position: fixed;
+    top: 20vh;
+    left: 25vw;
+    background-color: #353849;
+    opacity: 0;
+    z-index: 2;
+    box-shadow: .1rem .1rem .1rem rgba(0,0,0,0.5); 
+}
+
+#posts-area .container {
+    width: 100%;
+}
+
+.post {
+    background-color: #353849;
+    box-shadow: .1rem .1rem .1rem rgba(0,0,0,0.5); 
+}
+
+.ad {
+    height: 145px;
+    background-image: url(./advertissement.jpg);
+    background-size: cover;
+    background-position: center;
+}
